@@ -46,8 +46,8 @@ public class flowLayout extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		flow = new FlowLayout(FlowLayout.LEFT, 15, 15);  // ← CREA EL LAYOUT
-		contentPane.setLayout(flow);                     // ← LO ASOCIA AL PANEL
+		flow = new FlowLayout(FlowLayout.LEFT, 15, 15);  
+		contentPane.setLayout(flow);                     
 		
 		JButton Boton1 = new JButton("Boton1");
 		Boton1.addActionListener(new ActionListener() {
@@ -80,7 +80,7 @@ public class flowLayout extends JFrame {
 		buttonGroup.add(AlinearDerecha);
 		contentPane.add(AlinearDerecha);
 		
-		AlinearIzquierda.setSelected(true); // ← AÑADE ESTA LÍNEA
+		AlinearIzquierda.setSelected(true); 
 
 		
 		JButton BotonAplicar = new JButton("Aplicar");
@@ -97,7 +97,7 @@ public class flowLayout extends JFrame {
 		        contentPane.repaint();
 		    }
 		});
-		
+
 	}
 
 }
